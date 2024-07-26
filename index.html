@@ -17,6 +17,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
         .banner {
             background: url('https://example.com/your-banner-image.jpg') no-repeat center center;
@@ -46,6 +47,12 @@
             50% { opacity: 0.5; }
             100% { opacity: 1; }
         }
+        .flash-message img {
+            vertical-align: middle;
+            width: 30px; /* Adjust as needed */
+            height: auto;
+            margin: 0 10px;
+        }
         .welcome-message {
             font-size: 2.5em;
             font-weight: bold;
@@ -60,7 +67,7 @@
 </head>
 <body>
     <div class="flash-message">
-        We are coming soon!
+        We are coming soon! <strong>Aug 15</strong> <img src="https://www.countryflags.io/in/flat/32.png" alt="India Flag">
     </div>
     <div class="banner"></div>
     <div class="welcome-message">
