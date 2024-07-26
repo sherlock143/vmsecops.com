@@ -26,25 +26,31 @@
             border-radius: 10px;
             margin-bottom: 20px;
         }
-        .welcome-message {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 20px 0;
-        }
         .flash-message {
-            background-color: #ff0000;
-            color: #fff;
+            background-color: #ffd700; /* Gold color */
+            color: #000;
             padding: 10px;
             border-radius: 5px;
-            font-size: 1.2em;
+            font-size: 1.5em;
             width: 80%;
             margin: 20px auto;
             animation: flash 1s infinite;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
         }
         @keyframes flash {
             0% { opacity: 1; }
             50% { opacity: 0.5; }
             100% { opacity: 1; }
+        }
+        .welcome-message {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 20px 0;
+            z-index: 1;
         }
         .footer {
             margin-top: 20px;
@@ -53,12 +59,12 @@
     </style>
 </head>
 <body>
+    <div class="flash-message">
+        We are coming soon!
+    </div>
     <div class="banner"></div>
     <div class="welcome-message">
         Welcome to Vmsecops.com
-    </div>
-    <div class="flash-message">
-        We are coming soon!
     </div>
     <div class="footer">
         <p>&copy; 2024 Vmsecops.com. All rights reserved.</p>
